@@ -39,7 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # own
+    'corsheaders',
+    'rest_framework',
+    
+    # apps
     'todo.apps.TodoConfig',
+    
 ]
 
 MIDDLEWARE = [
@@ -124,3 +129,8 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Corsheaders
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000'
+]
