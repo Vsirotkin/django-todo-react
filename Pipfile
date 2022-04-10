@@ -13,3 +13,6 @@ markdown = "*"
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+run = './manage.py runserver'
